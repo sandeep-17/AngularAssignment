@@ -1,0 +1,18 @@
+<input type="text" class="form-control"  [disabled]="disableInput"  (input)="readValue($event);" [(ngModel)]="cast1"/><br>
+<input type="text" class="form-control"  [disabled]="disableInput" (input)="readValue($event);" [(ngModel)]="cast2"/><br>
+<input type="text" class="form-control"  [disabled]="disableInput" (input)="readValue($event);" [(ngModel)]="cast3"/><br>
+<input type="text" class="form-control"  [disabled]="disableInput" (input)="readValue($event);" [(ngModel)]="cast4"/><br>
+<input type="text" class="form-control"  [disabled]="disableInput"  (input)="readValue($event);" [(ngModel)]="cast5"/><br>
+
+<button (click)="addCasts();" [disabled]="disableButton">Add Casts</button><br>
+<button (click)="removeCasts();" >Reset</button>
+
+
+<div *ngIf="displayList">
+  Cast 1: {{cast1}}<br>
+  Cast 2: {{cast2}}<br>
+  Cast 3: {{cast3}}<br>
+  Cast 4: {{cast4}}<br>
+  Cast 5: {{cast5}}<br>
+</div>
+
